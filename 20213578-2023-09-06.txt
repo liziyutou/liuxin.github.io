@@ -1,0 +1,105 @@
+    1  cd liux/
+    2  cd /
+    3  cd liuxin/
+    4  mkdir liux/
+    5  ls
+    6  cd liux
+    7  mkdir liuxin
+    8  mkdie liux/
+    9  mksdir liuxin/
+   10  mkdir liux
+   11  mkdir liux/
+   12  mkdir liux/
+   13  mkdir liux/
+   14  ls liux/
+   15  cp /c/pic/* 
+   16  cp /c/pic/5e416794585141d50b52ef0a019e78f.jpg 
+   17  cp /c/pic/5e416794585141d50b52ef0a019e78f.jpg -a
+   18  cp /c/pic/5e416794585141d50b52ef0a019e78f.jpg -r
+   19  cp /c/pic/5e416794585141d50b52ef0a019e78f.jpg /
+   20  ls
+   21  ls liux/
+   22  cp /c/pic/5e416794585141d50b52ef0a019e78f.jpg liux/
+   23  ls liux/
+   24  histoiry
+   25  history
+   26  ls liux/
+   27  rm liux/
+   28  rm liux/5e416794585141d50b52ef0a019e78f.jpg 
+   29  ls liux/
+   30  history
+   31  rm liuxin/
+   32  rm liuxin/* .-r
+   33  rm liuxin/*
+   34  rm liuxin/
+   35  cp /c/pic/5e416794585141d50b52ef0a019e78f.jpg  liux/
+   36  ls liux/
+   37  history
+   38  mkdir liux20213578/
+   39  mkdir 20213578-2023.9.6.text/
+   40  history > 20213578-2023.9.6.text/
+   41  history >20213578-2023.9.6.text/
+   42  history>20213578-2023.9.6.text/
+   43  history < 20213578-2023.9.6.text/
+   44  history<20213578-2023.9.6.text/
+   45  ls 20213578-2023.9.6.text/
+   46  20213578-2023.9.6.text/
+   47  rm 20213578-2023.9.6.text
+   48  rm 20213578-2023.9.6.text/-r
+   49  rm 20213578-2023.9.6.text-r/
+   50  rm 20213578-2023.9.6.text -r
+   51  rm liux20213578 -r
+   52  ls liux20213578
+   53  ls liux20213578/
+   54  history > 20213578-2023-09-06.TXT
+   55  ls 20213578-2023-09-06.TXT 
+   56  rm 20213578-2023-09-06.TXT 
+   57  ls 20213578-2023-09-06.TXT
+   58  history > 20213578-2023-09-06.txt
+   59  history
+   60   ls liux/
+   61  ls liuxin//
+   62  ls liuxin/
+   63  ls liuxin/-r
+   64  ls liuxin/ -r
+   65  mkdir liux/
+   66  pwd
+   67  cp /c/pic/5e416794585141d50b52ef0a019e78f.jpg liuxin/
+   68  cp /c/pic/5e416794585141d50b52ef0a019e78f.jpg liux/
+   69  cp /c/pic/LinuxCMD-0.mp3 
+   70  cp /c/pic/LinuxCMD-0.mp3 liux/
+   71  rm /c/pic/LinuxCMD-1.mp3 liux/
+   72  rm /c/pic/LinuxCMD-0.mp3 liux/
+   73  rm /c/pic/LinuxCMD-0.mp3 -r liux/
+   74  cp /c/pic/LinuxCMD-0.mp3 liux/
+   75  cp /c/pic/LinuxCMD-0.mp3 liux/
+   76  pwd
+   77  cd /
+   78  cd liux/
+   79  pwd
+   80  ls
+   81  cp /c/pic/LinuxCMD-0.mp3 liux/
+   82  cp /c/pic/LinuxCMD-0.mp3 -r liux/
+   83  cp /c/pic/LinuxCMD-0.mp3 -r /liux
+   84  ls liux
+   85  ls liux/
+   86  ls /liux
+   87  cd /
+   88  ls liux
+   89  cp /c/pic/LinuxCMD-1.mp3 liux
+   90  ls
+   91  history
+   92  touch l/
+   93  touch liux/
+   94  liux/
+   95  ls liux/
+   96  history > 20213578-2023-09-06.txt
+   97  echo
+   98  echo ‘"HAOCHIDE">>liux/
+   99  echo ‘"HAOCHIDE">>liux
+  100  echo ‘"HAOCHIDE" >> liux 
+  101  echo ‘"HAOCHIDE" >> liux/
+  102  cd /liux
+  103  echo ‘"HAOCHIDE" >> liux/
+  104  history
+  105  history > 20213578-2023-09-06.txt

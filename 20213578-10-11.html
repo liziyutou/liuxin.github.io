@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript">
+  <!--
+	var mp4=["2013东西方2马的交锋.mp4","funDogs.mp4","上瘾.mp4","世界冠军江西弃婴.mp4","农民吹牛.mp4","逗八哥狗.mp4"];
+  //-->
+  </script>
+  <style type="texts/CSS">
+	
+	input{
+		font-size:2em;
+		margin-right:3em;
+	}
+  <style>
+ </head>
+ <body>
+  <video id="video" src="videoMP4/2013东西方2马的交锋.mp4">
+
+  <video>
+  <<div id="" class="">
+	<input type="button" value="PLAY" id="play">
+	<input type="button" value="STOP" id="stop">
+	<input type="button" value="NEXT" id="next">
+  </div>
+ </body>
+ <script type="text/javascript">
+ <!--
+	var myVideo=document.getElementById("video");
+	var playB=document.getElementById("play");
+	var stopB=document.getElementById("stop");
+	var nextB=document.getElementById("next");
+	//当点击时
+	playB.onclick = function(){
+		myVideo.play();
+	};
+	stopB.onclick = function(){
+		myVideo.pause();
+	};
+	var i = 0;
+	nextB.onclick = function(){
+		if(mp4.length - 1 > i){
+			i++;
+			myVideo.src = "videoMP4/" + mp4[i];
+			myVideo.play();
+		}else{
+			console.log("已经是最后一个视频了")
+		}
+	};
+	//鼠标放在上面时
+	playB.onmouseover = function(){
+		console.log("hello word")
+	};
+ //-->
+ </script>
+<html>

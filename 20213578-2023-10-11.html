@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript">
+  <!--
+	var mp4=["2013东西方2马的交锋.mp4","funDogs.mp4","上瘾.mp4","世界冠军江西弃婴.mp4","农民吹牛.mp4","逗八哥狗.mp4"];
+  //-->
+  </script>
+  <style type="text/CSS">
+	
+	input{
+		font-size:2em;
+		margin-right:1em;
+		padding:5px 10px;
+		width:3em;
+
+	}
+  </style>
+ </head>
+ <body>
+  <video id="video" src="../videoMP4/2013东西方2马的交锋.mp4">
+	
+  </video>
+  <div id="" class="">
+	<input type="button" value="PLAY" id="play">
+	<input type="button" value="STOP" id="stop">
+	<input type="button" value="NEXT" id="next">
+	<input type="button" value="PRE" id="PRE">
+	<input type="text" value="0" id="videoSN">
+  </div>
+ </body>
+ <script type="text/javascript">
+ <!--
+	var myVideo=document.getElementById("video");
+	var play=document.getElementById("play");
+	var stop=document.getElementById("stop");
+	var next=document.getElementById("next");
+	var privous=document.getElementById("PRE");
+	var videoSN=document.getElementById("videoSN");
+	var i = 0;
+	//当点击时
+	play.onclick = function(){
+		console.log("SN:"+videoSN.value);
+        if(parseInt(videoSN.value)){
+			 videoSN.value = parseInt(videoSN.value);
+	
+			 if(videoSN.value  > mp4.length - 1){
+				 alert("输入数字过大，视频数量不够");
+				 videoSN.value = i;
+			 }
+			 else{
+				 i =  videoSN.value;
+			 }
+		}
+		else{
+		    videoSN.value =  i;
+		}
+		myVideo.src = "../videoMP4/" + mp4[i];
+		myVideo.play();
+	};
+	stop.onclick = function(){
+		myVideo.pause();
+	};
+
+	next.onclick = function(){
+			i++;
+			if(i==6){
+				i=0;
+			}
+			myVideo.src = "../videoMP4/" + mp4[i];
+			videoSN.value = i;
+			myVideo.play();
+	};
+	privous.onclick = function(){
+			i--;
+			if(i==-1) {
+				i=mp4.length - 1;
+			}
+
+			myVideo.src = "../videoMP4/" + mp4[i];
+			videoSN.value = i;
+			myVideo.play();
+	}
+	//鼠标放在上面时
+	play.onmouseover = function(){
+		console.log("hello")
+	};
+ //-->
+ </script>
+<html>

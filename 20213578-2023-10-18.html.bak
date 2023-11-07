@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>视频播放器</title>
+  <script type="text/javascript">
+  <!--
+	var mp4 = ["2013东西方2马的交锋.mp4","funDogs.mp4","上瘾.mp4","世界冠军江西弃婴.mp4","农民吹牛.mp4","逗八哥狗.mp4"];
+  //-->
+  </script>
+  <style type="text/CSS">
+	
+	input{
+		font-size:2em;
+		margin-right:1em;
+		padding:5px 10px;
+		width:3em;
+
+	}
+	div#logo{
+		font-size:4em;
+		background-color:red;
+		color:blue;
+		position:absolute;
+	    right:0;
+		top:0;
+		padding:10px 20px;
+	}
+  </style>
+ </head>
+ <body>
+  <div id = "logo">
+      No.1/共6
+  </div>
+
+  <video id = "video" src = "../videoMP4/2013东西方2马的交锋.mp4">
+	
+  </video>
+  <div id="" class="">
+	<input type = "button" value = "PLAY" id = "play">
+	<input type = "button" value = "STOP" id = "stop">
+	<input type = "button" value = "NEXT" id = "next">
+	<input type = "button" value = "PRE" id = "PRE">
+	<input type = "text" value = "0" id = "videoSN">
+	<input type = "text" value = "0s" id = "currentTime">
+  </div>
+ </body>
+ <script type="text/javascript">
+ <!--
+ //下面定义全局变量，这些都是页面上的元素对象
+	var myVideo = document.getElementById("video");
+	var play = document.getElementById("play");
+	var stop = document.getElementById("stop");
+	var next = document.getElementById("next");
+	var privous = document.getElementById("PRE");
+	var videoSN = document.getElementById("videoSN");
+	var currentTimeDom = document.getElementById("currentTime");
+	var logoDom = document.getElementById("logo");
+	var i = 0;
+//将视频设置为全屏
+	function currentVideoUI(i){
+		logoDom.textContent = "No." + (i+1) + "/" + mp4.length;
+	}
+//得到屏幕宽度
+	var screenWidth = document.body.clientWidth;
+	console.log('your screen width:'+screenWidth);//控制台输出
+//将屏幕拓宽至全屏
+	myVideo.style.width = screenWidth + 'px';//px是像素单位
+	currentVideoUI(i);
+	
+	window.setInterval(function() {
+			currentTimeDom.value = parseInt(myVideo.currentTime)  + "s";
+	},1000);
+	
+
+
+	document.onkeypress = function(e){
+		console.log('You type：'+e.key);
+		 if(e.key == "Enter") {
+            // 如果视频序号正确
+            if(isValid(videoSN.value)) {
+                index = videoSN.value - 1;
+                // 修改logo
+                currentVideoUI(index);
+            } else {
+                // 如果不正确,就视频下标不变,提示非法
+                alert("视频序号非法");
+        
+            }
+
+            
+            myVideo.src = "../videoMP4/" + mp4[i];
+            myVideo.play();
+
+	}
+};
+	//当点击时
+	play.onclick = function(){
+		console.log("SN:"+videoSN.value);
+        if(parseInt(videoSN.value)){
+			 videoSN.value = parseInt(videoSN.value);
+			 if(videoSN.value  > mp4.length - 1){
+				 alert("视频数量不够");
+				 videoSN.value = i;
+			 }
+			 else{
+				 i =  videoSN.value;
+			 }
+		}
+		else{
+		    videoSN.value =  i;
+		}
+		myVideo.src = "../videoMP4/" + mp4[i];
+		myVideo.play();
+	};
+	stop.onclick = function(){
+		myVideo.pause();
+	};
+
+	next.onclick = function(){
+			i++;
+			if(i==6){
+				i=0;
+			}
+			myVideo.src = "../videoMP4/" + mp4[i];
+			videoSN.value = i;
+			myVideo.play();
+			currentVideoUI(i);
+	};
+	privous.onclick = function(){
+			i--;
+			if(i==-1) {
+				i=mp4.length - 1;
+			}
+
+			myVideo.src = "../videoMP4/" + mp4[i];
+			videoSN.value = i;
+			myVideo.play();
+			currentVideoUI(i);
+	};
+	//鼠标放在上面时
+	play.onmouseover = function(){
+		console.log("hello")
+	};
+ //-->
+ </script>
+<html>
