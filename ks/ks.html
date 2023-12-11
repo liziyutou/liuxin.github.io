@@ -1,0 +1,88 @@
+<!DOCTYPE html><!-- 告诉浏览器要以HTML5的标准 -->
+<html lang="en"> <!-- 设置浏览器的语言为英语 -->
+
+<head>
+    <meta charset="UTF-8"><!-- 告诉浏览器是utf-8的方式解码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>播放视频</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="数据.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="group">
+            第7组
+        </div>
+        <div id="face-img">
+            <div class="container-img">
+                <img class="face" src="myface/20213583万一苇计算机科学与技术1班.jpg">
+            </div>
+            <div class="container-img">
+                <img class="face" src="myface/刘鑫1.jpg">
+            </div>
+            <div class="container-img">
+                <img class="face" src="myface/杨益1.jpg">
+            </div>
+            <div class="container-img">
+                <img class="face" src="myface/李俊1.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="stage">
+        <div id="container">
+
+            <div id="logo">
+    
+            </div>
+    
+            <div id="videoTime">
+    
+            </div>
+    
+            <video src="" id="myVideo" controls>
+            </video>
+            <audio src="" id="myAudio" controls></audio>
+    
+        </div>
+        <div class="container-list">
+            <div class="show-media-list">媒体列表</div>
+            <div class="list">
+                <ul class="mediaList" id="showList">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div>
+        <input type="button" value="PREV" id="previous">
+        <input type="button" value="PLAY" id="play">
+        <input type="button" value="STOP" id="stop">
+        <input type="button" value="NEXT" id="next">
+        <input type="text" value="1" id="videoSN">
+        <input type="button" value="ToAudio" id="switch">
+        <!-- <input type="text" value="0s" id="currentTime"> -->
+    </div>
+
+    <div id="footer">
+       <span id="pre-text">
+            媒体
+       </span>
+       <span id="last-text">
+            系统
+       </span>
+    </div>
+
+
+    <script src="index.js">
+
+    </script>
+
+</body>
+
+
+</html>
